@@ -20,7 +20,6 @@ export class HeroesComponent implements OnInit {
 
   @Input() hero!: Hero;
 
-
   constructor() {}
 
   ngOnInit() {}
