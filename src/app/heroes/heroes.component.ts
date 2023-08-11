@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Hero } from '../hero';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   standalone: true,
@@ -11,10 +12,14 @@ import { Hero } from '../hero';
   imports: [CommonModule, FormsModule],
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'Rutik',
-  };
+  // hero: Hero = {
+  //   id: 1,
+  //   name: 'Rutik',
+  // };
+  // heroes = HEROES;
+
+  @Input() hero!: Hero;
+
 
   constructor() {}
 
