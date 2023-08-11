@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { HeroesComponent } from './heroes/heroes.component';
+import { hero } from './hero';
 import { HEROES } from './mock-heroes';
 
 @Component({
