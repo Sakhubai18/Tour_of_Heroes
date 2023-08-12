@@ -1,4 +1,10 @@
 .container{
   display: flex;
-  margin-left: 1000px;
+  /* justify-content: space-around;
+  align-self: flex-start; */
+  margin: auto;  
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  align-content: center;
 }
